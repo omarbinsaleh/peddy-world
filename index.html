@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/x-icon" href="./images/logo.webp">
+   <title>Peddy - Welcome to our world</title>
+   <!-- CDN for Lato font -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <!-- daisyUI and tailwindcss CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- local css file -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="font-lato">
+   <header class="p-3 border">
+      <!-- navbar section -->
+      <div class="navbar bg-base-100 max-w-[1450px] mx-auto">
+         <div class="navbar-start">
+            <div class="dropdown">
+               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden pl-0 pr-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+               </div>
+               <ul tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li>
+                     <a>Shop</a>
+                  </li>
+                  <li><a>Contact</a></li>
+               </ul>
+            </div>
+            <a id="home" class="btn btn-ghost hover:bg-transparent text-xl pl-0"><img src="./images/logo.webp" alt="">
+               <span class="font-bold text-2xl">Peddy</span>
+            </a>
+         </div>
+         <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+               <li><a>Home</a></li>
+               <li>
+                  <a>Shop</a>
+               </li>
+               <li><a>Contact</a></li>
+            </ul>
+         </div>
+         <div class="navbar-end">
+            <a class="btn min-w-8 min-h-8 bg-white border border-gray-400 aspect-square rounded-full"><img
+                  class="min-w-[20px]" src="./images/profile.png" alt=""></a>
+         </div>
+      </div>
+   </header>
+
+   <main class="p-3 pt-8 border">
+      <!-- hero section -->
+      <section class="max-w-[1450px] mx-auto text-center space-y-6">
+         <p class="max-w-[800px] mx-auto text-lg font-semibold">Bringing Families Together ❤️‍🔥 </p>
+         <h1 class="max-w-[800px] mx-auto text-3xl md:text-5xl lg:text-6xl font-bold">Your Path to Adoption Starts Here
+         </h1>
+         <p class="max-w-[800px] mx-auto text-slate-500 text-collapse-4">
+            Discover the perfect companion at Peddy!. With our extensive collection of lovable pets, we make finding your ideal furry friend easy an enjoyable. Browse through a diverse range of animals, each waiting for a forever home. Join us on this heartwarming journey and take the first step toward bringing joy and love into your life through pet adoption.
+         </p>
+         <a href="#addopt-section" class="btn px-6  bg-slate-600 hover:bg-slate-500 text-white">View More</a>
+         <div class="max-w-[800px] mx-auto">
+            <img class="w-full" src="./images/pet.webp" alt="">
+         </div>
+      </section>
+
+      <section id="addopt-section" class="max-w-[1450px] mx-auto mt-20">
+         <h2 class="text-2xl font-bold text-center">Adopt Your Best Friend</h2>
+         <p class="max-w-[800px] mx-auto text-slate-500 text-center text-collapse-4">
+            Find your perfect match with ease!. Here, you can explore our diverse categories of pets to quickly locate the companion that suits your lifestyle. Each pet card offers details information and heartwarming stories, helping you make an informed choice. Whether you are looking for a playfull puppy, a cuddly kitten, or a loyal friend, you are just a few clicks away from adoption your best friend. Start your journey of companionship today!
+         </p>
+      </section>
+
+      <!-- category section -->
+      <section id="categories" class="max-w-[1450px] mx-auto flex flex-wrap justify-start sm:justify-between lg:justify-center gap-4 mt-5">
+         <button class="btn btn-category p-2 px-8 text-center text-lg font-bold bg-white border border-slate-400 hover:bg-sky-800 hover:text-white">
+            <img class="h-full" src="./images/dog.png" alt="dog"> Dogs
+         </button>
+         <button class="btn btn-category p-2 px-8 text-center text-lg font-bold bg-white border border-slate-400 hover:bg-sky-800 hover:text-white">
+            <img class="h-full" src="./images/cat.png" alt="dog"> Cats
+         </button>
+         <button class="btn btn-category p-2 px-8 text-center text-lg font-bold bg-white border border-slate-400 hover:bg-sky-800 hover:text-white">
+            <img class="h-full" src="./images/rabbit.png" alt="dog"> Rabbits
+         </button>
+         <button class="btn btn-category p-2 px-8 text-center text-lg font-bold bg-white border border-slate-400 hover:bg-sky-800 hover:text-white">
+            <img class="h-full" src="./images/bird.png" alt="dog"> Birds
+         </button>
+      </section>
+      <section class="max-w-[1450px] mx-auto mt-5 space-y-2">
+         <div class="flex items-center justify-between">
+            <h3 class="text-xl font-bold">Best Deal For You</h3>
+            <button id="btn-sort" class="btn px-9  bg-slate-600 hover:bg-slate-500 text-white">Sort by Price</button>
+         </div>
+
+         <div id="pet-container" class="py-1 grid grid-cols-12 gap-4">
+            <!-- card container : all pet card -->
+            <div id="pet-card-container" class="md:min-h-[767px] max-h-[807.33px] overflow-auto border border-gray-300 col-span-full sm:col-start-1 sm:col-end-10 p-1 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+               <!-- all the pet card will be displayed here  -->
+            </div>
+
+            <!-- liked pets: all of the pets which has been liked -->
+            <div id="liked-container" class="max-h-[807.33px] overflow-auto p-1 border border-gray-300 col-span-full sm:col-start-10 sm:col-end-13 grid grid-cols-2 gap-2 content-start">
+
+               <!-- <img class="w-full aspect-square rounded-lg border p-1" src="./images/pet.webp" alt=""> -->
+
+            </div>
+         </div>
+
+      </section>
+
+
+      <!-- modal -->
+       <div id="modal-info" class=" hidden fixed z-20 top-0 left-0 w-screen h-screen bg-black bg-opacity-40 items-center justify-center backdrop-blur-sm">
+         <div id="modal-info-body" class="w-[60%] max-w-[480px] max-h-[500px] overflow-auto p-4 rounded-lg bg-white space-y-3">
+            <img class="w-full aspect-[7/3] object-cover rounded-lg border" src="./images/pet.webp" alt="">
+            <div class="space-y-1">
+               <h2 class="text-xl font-bold">Alessia Max</h2>
+               <div class="grid grid-cols-2 gap-1 text-xs font-semibold text-slate-500">
+                  <p class="flex items-center gap-2"><span><img class="w-4" src="./images/breed.png" alt=""></span>Bredd: Golden retriever</p>
+                  <p class="flex items-center gap-2"><span><img class="w-4" src="./images/birth.png" alt=""></span>Birth: 2024</p>
+                  <p class="flex items-center gap-2"><span><img class="w-4" src="./images/gender.png" alt=""></span>Gender: Female</p>
+                  <p class="flex items-center gap-2"><span><img class="w-4" src="./images/price.png" alt=""></span>Price: 199$</p>
+                  <p class="flex items-center gap-2"><span><img class="w-4" src="./images/price.png" alt=""></span>Vaccinated Status: Partially</p>
+               </div>
+            </div>
+            <div class="divider my-0"></div>
+            <div class="space-y-1">
+               <h3 class="font-semibold text-sm">Details Information</h3>
+               <p class="text-xs text-slate-500">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using is that it has a more-or-less normal distribution of letters, as opposed to using.
+               </p>
+            </div>
+            <div class="mt-6">
+               <button class="btn w-full hover:bg-red-500 hover:text-white focus:ring-1 ring-red-500 ring-offset-1">Cancel</button>
+            </div>
+         </div>
+       </div>
+   </main>
+
+   <!-- footer section -->
+   <footer class="bg-black text-white p-3 border border-green-500">
+      <section class=" text-white max-w-[1450px] mx-auto py-2 md:py-7">
+
+         <footer class="footer bg-transparent text-white">
+            <aside>
+               <div>
+                  <a href="#home" class="btn btn-ghost hover:bg-transparent text-xl pl-0"><img src="./images/logo.webp"
+                        alt="">
+                     <span class="font-bold text-2xl">Peddy</span>
+                  </a>
+               </div>
+               <div class="text-xs mb-3">
+                  <p>Location: av. Washington 165, NY CA 54003</p>
+                  <p>Phone: +31 85 964 47 25</p>
+                  <p> Email: info@yourdomain.com</p>
+                  <p>Openings hours: 9.00 AM - 5.00 PM</p>
+               </div>
+               <div class="flex gap-4">
+                  <img class="w-6 h-6" src="./images/facebook.png" alt="">
+                  <img class="w-6 h-6" src="./images/tweeter.png" alt="">
+                  <img class="w-9 h-6" src="./images/youtube.png" alt="">
+                  <img class="w-6 h-6" src="./images/instagram.png" alt="">
+               </div>
+            </aside>
+            <nav>
+               <h6 class="footer-title">Home</h6>
+               <a class="link link-hover">About Us</a>
+               <a class="link link-hover">Animal</a>
+               <a class="link link-hover">Foundation</a>
+               <a class="link link-hover">Contact</a>
+            </nav>
+
+            <nav class="w-full space-y-3 sm:space-y-0">
+               <h6 class="footer-title">Drop a Message</h6>
+               <div class="w-full max-w-[300px] space-y-3">
+                  <label class="input input-bordered flex items-center gap-2 bg-slate-800 ">
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                        class="h-4 w-4 opacity-70">
+                        <path
+                           d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+                        <path
+                           d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+                     </svg>
+                     <input type="email" class="grow w-full" placeholder="Email" />
+                  </label>
+                  <button class="btn w-full bg-sky-900 text-white">Subscribe</button>
+               </div>
+            </nav>
+         </footer>
+
+      </section>
+   </footer>
+
+   <!-- local scripts file -->
+   <script src="./scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+.text-collapse-4 {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 4;
+ }
+ 
+ .text-collapse-4:hover {
+   -webkit-line-clamp: unset;
+ }
